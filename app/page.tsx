@@ -35,11 +35,27 @@ export default function Home() {
           </select>
         </div>
       </div>
-      <div className="bg-red-50/10 w-full h-full  flex items-center justify-center">
-        <div className="flex flex-col lg:flex-row items-center lg:gap-32 max-w-5xl w-full h-full ">
-          <NameTag />
-          <Links />
+      <div className="bg-red-50/10 w-full h-full">
+        <div className="flex  items-center justify-center w-full h-full ">
+          <div className="flex flex-col lg:flex-row items-center lg:gap-32 max-w-5xl w-full h-full ">
+            <NameTag />
+            <Links />
+          </div>
         </div>
+      </div>
+      <div className="absolute bottom-8 ">
+        <Lottie
+          height={50}
+          width={50}
+          options={{
+            loop: false,
+            autoplay: true,
+            animationData: require("../public/lottie/anim-scroll.json"),
+            rendererSettings: {
+              preserveAspectRatio: "xMidYMid slice",
+            },
+          }}
+        />
       </div>
     </main>
   );
