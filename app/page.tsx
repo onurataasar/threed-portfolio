@@ -24,7 +24,7 @@ export default function Home() {
           />
         </div>
         <div className="flex gap-8 items-center">
-          <Link href={"/contact"}>iletiş</Link>
+          <Link href={"/contact"}>iletişim</Link>
           <select className="bg-transparent text-base font-mono  rounded-md p-1">
             <option className="bg-black text-white border border-gray-300 rounded-md p-1">
               TR
